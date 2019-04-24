@@ -11,6 +11,7 @@ f1:
 	addi $v0,$v0,3
 	lw   $ra,0($sp)
 	addi $sp,$sp,4
+	jr   $ra
 
 f2:
     addi $sp,$sp,-4
@@ -21,6 +22,7 @@ f2:
 	addi $v0,$v0,3
 	lw   $ra,0($sp)
 	addi $sp,$sp,4
+	jr   $ra
 
 f3:
     addi $sp,$sp,-4
@@ -31,10 +33,12 @@ f3:
 	add $v0,$t0,$t1
 	lw   $ra,0($sp)
 	addi $sp,$sp,4
+	jr   $ra
 
 f4:
     addi $sp,$sp,-4
 	sw   $ra,0($sp)
 	mul  $v0,$a0,7
 	lw   $ra,0($sp)
-	addi $sp,$sp,4     
+	addi $sp,$sp,4
+	jr    $ra
